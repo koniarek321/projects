@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    box-shadow: 2px;
+}
+.main-container {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 6px 16px -2px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 6px 16px -2px rgba(66, 68, 90, 1);
+    box-shadow: 0px 6px 16px -2px rgba(66, 68, 90, 1);
+}
+.blue-background {
+    max-width: 300px;
+    width: 100%;
+    height: 120px;
+    position: absolute; 
+    z-index: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(109, 109, 249);
+}
+.white-background {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    z-index: 0;
+    bottom: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.portrait {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    border-radius: 50%;
+    background-color: rgb(109, 109, 249);
+    padding: 4px;
+    align-items: center;
+    left: 30%;
+}
+.portrait img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+.profile-text {
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.profile-text .span1 {
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.profile-text .span2 {
+    color: rgb(89, 89, 89);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.social-icons {
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+.social-icons img {
+    height: 35px;
+}
+.social-icons img {
+    cursor: pointer;
+}
+.social-icons .img-mid-left {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.social-icons .img-mid-right {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.buttons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons div {
+    height: 33px;
+    width: 100px;
+    background-color: rgb(109, 109, 249);
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 30px;
+    border-radius: 30px;
+    color: white;
+}
+.buttons div:hover {
+    background-color: rgb(76, 76, 245);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.buttons .mes {
+    margin-left: 15px;
+
+}
+.buttons .sub {
+    margin-right: 15px;
+}
+.numbers {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: center;
+    position: relative;
+}
+.numbers div {
+    width: 70px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+.numbers div img {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+.numbers div p {
+    margin-top: 15px;
+    margin-left: 3px;
+}

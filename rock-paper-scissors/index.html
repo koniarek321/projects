@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, paper, scissors</title>
+</head>
+<body>
+    <header>
+        <div>
+            <p>ROCK</p>
+        </div>
+        <div class="paper">
+            <p>PAPER</p>
+        </div>
+        <div>
+            <p>SCISSORS</p>
+        </div>
+    </header>
+    <div class="stats">
+        <div class="player">
+            <p>Player</p>
+        </div>
+        <div class="player-stats">
+            <p></p>
+        </div>
+        <div class="comp-stats">
+            <p></p>
+        </div>
+        <div class="computer">
+            <p>Comp</p>
+        </div>
+    </div>
+    <div class="icons">
+        <button data-option = "PAPER"><img class="paper-image" src="images/paper-image.png" alt="paper"></button>
+        <button data-option = "ROCK"><img class="rock-image" src="images/rock-image.png" alt="rock"></button>
+        <button data-option = "SCISSORS"><img class="scissors-image" src="images/scissors-image.png" alt="scissors"></button>
+    </div>
+    <div class="before-start hidden">
+        <div class="display-results">
+            <span>Player choice: </span>
+            <span class="player-chose">ROCK</span>
+                <br>
+            <span>Computer choice: </span>
+            <span class="comp-chose">Scissors</span>
+        </div>
+        <div class="result-bar">
+            <div class="result-title">
+                <p>You won!!!</p>
+            </div>
+        </div>
+        <div class="restart-game">
+            <button class="restart">Restart game</button>
+        </div>
+    
+    <div class="choose-weapon">
+        <p>Choose your weapon.</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin-menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-name">
+            <span id="media-color">media</span>
+            <span id="tech">tech</span>
+            <span id="media-triangle">&#x25BA;</span>
+        </h1>
+        <button class="back-to-store">Back to store</button>
+        </div>
+        
+        <div class="basket-bar">
+            <div class="logout">
+                <button  class="user-btn">
+                    <i class="fa-solid fa-user fa-2xl" style="color: #ffff00;"></i>
+                </button>
+                <form method="post" action="index.php">
+                    <input name="logout-btn" type="submit" value="Log out" class="logout-btn">Log out</input>
+                </form>
+            </div>
+            <div class="basket-img">
+                <img src="images/shopping-cart.png" alt="basket">
+            </div>
+            <span>Cart</span>
+        </div>
+    </header>
+    <div class="content">
+        <div class="available-activities">
+            <button id="options-button" class="add-new-product">Add new product</button>
+            <div class="add-new-product-form">
+                <h3 id="h3-title">Add product to the database</h3>
+                <form action="">
+                    <input type="text" id="add-form" name="image-path" placeholder="Image path*" required><br>
+                    <input type="text" id="add-form" name="product-name" placeholder="Product name*" required><br>
+                    <input type="text" id="add-form" name="product-description" placeholder="Product description*" required><br>
+                    <input type="checkbox" id="add-form" name="check-sale"> <label for="">Discount</label> <br>
+                    <input type="text" id="add-form" name="price" placeholder="Price*" required><br>
+                    <input type="text" id="add-form" name="price-sale" placeholder="Price sale*" ><br>
+                    <input type="submit" id="add-product-submit" value="Add product to database"><br>
+                </form>
+                
+            </div>
+            <button id="options-button" class="delete-product">Delete product</button>
+            <div class="delete-product-form">
+                <h3 id="h3-title">Delete product from the database</h3>
+                <form action="">
+                    <input type="text" id="delete-form" name="product-name" placeholder="Product name*" required><br>
+                    <input type="checkbox" id="add-form" name="check-sale"> <label for="">Confirm deletion</label> <br>
+                    <input type="submit" id="delete-product-submit" value="Add product to database"><br>
+                </form>
+                
+            </div>
+            <button id="options-button" class="update-product">Update product</button>
+            <div class="update-product-form">
+                <h3 id="h3-title">Add product to the database</h3>
+                <form action="">
+                    <input type="text" id="update-form" name="old-product-name" placeholder="Old product name*" required><br>
+                    <input type="text" id="update-form" name="image-path" placeholder="Image path*" ><br>
+                    <input type="text" id="update-form" name="product-name" placeholder="Product name*" ><br>
+                    <input type="text" id="update-form" name="product-description" placeholder="Product description*" ><br>
+                    <input type="text" id="update-form" name="price" placeholder="Price*" ><br>
+                    <input type="text" id="update-form" name="price-sale" placeholder="Price sale*" ><br>
+                    <input type="submit" id="update-product-submit" value="Update product"><br>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="admin-menu.js"></script>
+</body>
+</html>
