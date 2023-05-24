@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="options">
+                <div class="half-option"><span>Password Length</span></div>
+                 <div class="half-option-input"><input type="text" id="length" name="length-input" value=""> </div>
+            </div>
+            <div class="options">
+                <div class="half-option"><span>Contain Uppercase Letters</span></div>
+                <div class="half-option-input"><input type="checkbox" id="uppercase-input" name="uppercase" value="uppercase"></div>
+            </div>
+            <div class="options">
+                <div class="half-option"><span>Contain Lowercase Letters</span></div>
+                <div class="half-option-input"><input type="checkbox" id="lowercase-input" name="lowercase" value="lowercase"></div> 
+            </div>
+            <div class="options">
+                <div class="half-option"><span>Contain Numbers</span></div>
+                <div class="half-option-input"><input type="checkbox" id="numbers-input" name="numbers" value="numbers"></div>
+            </div>
+            <div class="options">
+                <div class="half-option"><span>Contain Symbols</span></div>
+                <div class="half-option-input"><input type="checkbox" id="symbols-input" name="symbols" value="symbols"></div>
+            </div>
+        </div>
+        <div class="password">
+            <button>Generate password</button> <br>
+            <input type="text" name="password-input" id="generated-password" value=""> 
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

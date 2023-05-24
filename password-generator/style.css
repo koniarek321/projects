@@ -1,0 +1,108 @@
+*, ::before, ::after {
+    padding: 0px;
+    margin: 0px;
+
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+  0deg,
+  hsl(210deg 40% 21%) 0%,
+  hsl(210deg 44% 21%) 6%,
+  hsl(210deg 49% 22%) 12%,
+  hsl(210deg 53% 23%) 17%,
+  hsl(209deg 58% 23%) 22%,
+  hsl(209deg 62% 24%) 28%,
+  hsl(209deg 67% 24%) 33%,
+  hsl(209deg 72% 25%) 38%,
+  hsl(209deg 77% 25%) 44%,
+  hsl(208deg 82% 25%) 50%,
+  hsl(208deg 87% 26%) 58%,
+  hsl(208deg 91% 26%) 66%,
+  hsl(208deg 94% 27%) 75%,
+  hsl(209deg 96% 28%) 86%,
+  hsl(209deg 97% 28%) 100%
+);
+}
+.container {
+    width: 450px;
+    height: 400px;
+    padding: 10px;
+    -webkit-box-shadow: 8px 8px 54px 18px rgba(14, 27, 130, 1);
+    -moz-box-shadow: 8px 8px 54px 18px rgba(14, 27, 130, 1);
+    box-shadow: 8px 8px 54px 18px rgba(14, 27, 130, 1);
+    background-color: rgba(126, 126, 242, 1);
+background-image: linear-gradient(333deg, rgba(126, 126, 242, 1) 24%, rgba(32, 72, 234, 1) 41%, rgba(113, 137, 205, 1) 100%);
+}
+.content {
+    width: 100%;
+    height: 70%;
+    border-bottom: 1px black solid;
+}
+.options {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.half-option {
+    width: 50%;
+}
+.half-option-input {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    margin-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    padding:10px
+}
+button:hover {
+    background-color: rgb(187, 245, 245);
+    transition: 0.5s;
+}
+
+input[type="text"], textarea {
+    background-color: rgb(214, 214, 214);
+    min-width: 50%;
+    max-width: 90%;
+    height: 20px;
+}
+#generated-password {
+    height: 30px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    text-align: center;
+}
+#length {
+    min-width: 40px;
+    width: 40px;
+}
+
+
