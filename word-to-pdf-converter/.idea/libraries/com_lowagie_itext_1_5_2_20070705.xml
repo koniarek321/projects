@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.lowagie.itext-1.5.2-20070705">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../../WSIiZ/excelforms/jars/com.lowagie.itext-1.5.2-20070705.jar!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../WSIiZ/excelforms/jars/com.lowagie.itext-1.5.2-20070705.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar://$PROJECT_DIR$/../../../WSIiZ/excelforms/jars/com.lowagie.itext-1.5.2-20070705.jar!/" recursive="false" />
+  </library>
+</component>
