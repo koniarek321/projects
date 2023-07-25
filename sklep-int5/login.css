@@ -1,0 +1,438 @@
+*, ::after, ::before {
+    margin: 0px;
+}
+body {
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+}
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.header-name {
+    display: flex;
+    padding-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-name #media-color {
+    color: yellow;
+}
+.header-name #tech {
+    color: white;
+    margin-left: 5px;
+}
+.header-name #media-triangle {
+    height: 35px;
+    background-color: yellow;
+    border-radius: 10px;
+    
+    align-items: center;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    margin-left: 10px;
+}
+header .back-to-store {
+    
+    
+    
+    padding: 5px 10px 5px 10px;
+    font-size: 1.8em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background-color: yellow;
+}
+header .back-to-store:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.basket-bar {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 5px;
+    margin-right: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+header .display-options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    gap: 0.2em;
+    background-color: white;
+    padding: 3px;
+    border-radius: 0.3em;
+    top: 0.4em;
+    right: 14em;
+}
+header .display-options button {
+    padding: 0.5em;
+    width: 7em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5em;
+    background-color: yellow;
+}
+header .display-options button:hover {
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.basket-bar .menu-list {
+    height: 2.5em;
+    margin-right: 40px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.4em;
+}
+.basket-bar .menu-list:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+.basket-bar .basket-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.basket-bar .basket-img:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+.basket-bar span {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.content {
+    min-height: 70vh;
+    display: flex;
+    margin-bottom: 100px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 2em;
+    position: relative;
+}
+
+.lower-container {
+    display: flex;
+    margin-top: 2em;
+    padding: 1em 3em 1em 3em;
+    border: solid 0.1em rgb(220, 220, 220);
+}
+
+.logging{
+    height: 24em;
+    padding: 2em;
+    border: solid 0.1em rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.login-form {
+    gap: 2em;
+}
+
+
+
+.login-form input {
+    font-size: 1em;
+    padding: 0.7em 0 0.7em 0.3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+    border: solid 0.1em rgb(220, 220, 220);;
+}
+
+.login-form input[type=email] {
+    width: 26em;
+}
+
+.login-form input[type=password] {
+    width: 26em;
+}
+
+.login-form input[type=submit] {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: yellow;
+    
+}
+
+.login-form input[type=submit]:hover {
+    -webkit-box-shadow: 2px 3px 22px -10px rgba(66, 68, 90, 1);
+-moz-box-shadow: 2px 3px 22px -10px rgba(66, 68, 90, 1);
+box-shadow: 2px 3px 22px -10px rgba(66, 68, 90, 1);
+    transition: 0.2s;
+}
+
+.login-form a {
+    color: black;
+}
+
+.login-form a:hover {
+    color: yellow;
+    transition: 0.5s;
+}
+
+.new-client {
+    position: relative;
+    padding: 2em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.1em rgb(220, 220, 220);
+    gap: 1em;
+}
+
+
+
+.benefits-container {
+    line-height: 4em;
+    font-weight: 500;
+}
+.benefits-container i {
+    margin-right: 1em;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .header-name {
+        display: flex;
+        padding-left: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        gap: 2em;
+        position: relative;
+        margin-bottom: 2em;
+    }
+    .logging{
+        width: 70%;
+        height: 24em;
+        padding: 2em;
+        border: solid 0.1em rgb(220, 220, 220);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .new-client {
+        width: 70%;
+        position: relative;
+        padding: 2em;
+        height: 24em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 0.1em rgb(220, 220, 220);
+        gap: 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .new-client {
+        position: relative;
+        padding: 2em;
+        height: auto;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 0.1em rgb(220, 220, 220);
+        gap: 1em;
+    }
+    .login-form, form, .login-form input[type=email],  
+    .login-form input[type=password]{
+        width: 100%;
+    }
+    .logging{
+        width: 70%;
+        height: auto;
+        
+        padding: 2em;
+        border: solid 0.1em rgb(220, 220, 220);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+}
+
+/* To jest FOOTER */
+
+footer {
+
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    background-color: black;
+
+}
+footer div {
+    gap: 20px;
+    width: calc(100%/3);
+}
+.leftf p {
+    margin-top: 20px;
+    color: #ffffff;
+}
+.midf h2 {
+    text-align: center;
+}
+.midf div {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.midf div a {
+    width: fit-content;
+    color: #ffffff;
+    transition: all 0.2s ease-in;
+}
+.midf div a:hover {
+    color: yellow;
+}
+.rightf {
+    display: flex;
+    flex-direction: column;
+}
+.rightf h2 {
+    text-align: center;
+}
+.rightf div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.rightf div form {
+    display: flex;
+}
+.rightf div form input {
+    padding: 10px 0px;
+}
+.rightf div form button {
+    background-color: yellow;
+    font-weight: 600;
+    padding: 0px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.2s ease-in;
+}
+
+.rightf div form button:hover {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 80px 20px;
+    }
+    .leftf, .midf, .rightf {
+        width: 100%;
+    }
+    .leftf h1 {
+        text-align: center;
+    }
+    .leftf p {
+        text-align: center;
+    }
+    
+}
+
+.log button, .sign button {
+    border: none;
+    background-color: yellow;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.log button:hover, .sign button:hover{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: yellow;
+}
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log a {
+    padding: 9px 10px;
+    background-color: yellow;
+    margin-right: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    border-radius: 5px;
+    color: black;
+}
+
+.log a :hover {
+    color: #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sign button {
+    margin-right: 10px;
+}
